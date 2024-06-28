@@ -1,6 +1,9 @@
-NEAR Indexer Simple Logger Example
-==================================
+/nearcore/tools/indexer/example
 
-This is an example project featuring [NEAR Indexer Framework](https://github.com/nearprotocol/nearcore/tree/master/chain/indexer). This Indexer prints out all the blocks, chunks, transactions, receipts, execution outcomes, and state changes block by block immediately once it gets finalized in the network.
+provide a api
+curl -X GET http://127.0.0.1:6526/block/{number} | jq .
+provide 10000 block, new block data will cover old data
 
-Refer to the NEAR Indexer Framework README to learn how to run this example.
+import { types } from 'near-lake-framework';
+
+types.StreamerMessage
